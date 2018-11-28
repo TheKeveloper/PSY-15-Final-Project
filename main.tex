@@ -1,43 +1,217 @@
 \documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[margin=1.5in]{geometry}
+\usepackage[margin=1.2in]{geometry}
 \usepackage{natbib}
 \bibliographystyle{apalike}
+\newcommand{\displaybox}[1]{\fbox{\parbox{\textwidth}{#1}}}
 
 \usepackage{setspace}
 \setstretch{1.2}
 
-\title{Effects of Recruitment Methods on Survey Responses}
+\title{Effects of Recruitment Methods on Survey Response}
 \author{Kevin Bi}
 \date{\today}
-
+\setlength{\parskip}{12pt}%
+\setlength{\parindent}{0pt}%
 \begin{document}
 
 \maketitle
 
 \section{Introduction}
+A challenge facing nearly all psychological researchers is participant recruitment. Previous research has involved interviews on why individuals participate in studies and has found that they do so for a mix of altruism and self-interest \citep{mattson}. However, self-reported motives can be highly unreliable in accurately gauging motivation. Perhaps more concerning is that there has been little to no research on how study results may be affected by the recruitment method. 
 
 This paper explores how recruitment methods appealing to altruism versus monetary self-interest affect responses to psychological surveys. Specifically, I examine differences along three dimensions: 
 \begin{itemize}
-    \item Participation rate - the proportion of people that complete the survey 
-    \item Effort - how much work participants put into completing the survey 
-    \item Responses - how responses to the survey differ between treatment groups
+    \item Participation Rate
+    \item Survey Effort
+    \item Altruistic Behavior
 \end{itemize}
 
 \subsection{Theoretical Bases}
 \subsubsection{Participation Rate}
-The exploration of participation rate is based on cognitive dissonance theory, and more specifically motivated reasoning. Previous research has found that people want to construct a model of the world where they can perceive themselves as good \citep{batson}. I test the strength of motivated reasoning versus monetary incentive by examining how willing people are to complete a short survey in response to altruistic appeals. Completing a short survey for no monetary incentive allows individuals to construct a cognitive model of themselves as morally good individuals. By comparing participation rates in response to altruistic appeals and monetary appeals, I am able to gauge the strength of the motivated reasoning effect. 
+The exploration of participation rate is based on cognitive dissonance theory, and more specifically motivated reasoning. Previous research has found that people want to construct a model of the world where they can perceive themselves as good \citep{batson}. I test the strength of motivated reasoning versus monetary incentive by examining willingness to complete a short survey in response to altruistic appeals. Completing a short survey for no monetary incentive allows individuals to construct a cognitive model of themselves as morally good individuals. By comparing participation rates in response to altruistic appeals and monetary appeals, I am able to gauge the strength of the motivated reasoning effect. \\ \\
+\emph{Hypothesis: } The motivated reasoning effect will be relatively weak compared to the monetary incentive, so participants recruited with monetary incentives will have a higher response rate than participants recruited altruistically. 
 
 \subsubsection{Effort}
-The exploration of survey effort is based on effort justification theory. \textbf{INSERT ARONSON CITATION} found that when people had to put effort into a task, they enjoyed it more. I test whether the decision to put effort into a survey without monetary incentive inspires further effort on the survey. 
+The exploration of survey effort is based on effort justification theory. \citet{aronson} found that when people had to put effort into a task, they enjoyed it more. I test this theory a step further by examining whether the initial decision to put effort into a survey makes an individual enjoy it enough so that they are willing to more effort into the survey.  \\ \\
+\emph{Hypothesis: } Participants recruited altruistically will put more effort into the survey. 
 
-\subsubsection{Responses}
+\subsubsection{Altruistic Behavior}
+The theoretical basis for the difference in altruistic behavior is based on priming. Previous research has found that bringing to mind certain traits can unconsciously change people's behavior \citep{bargh}. So, if people receive a recruitment email that makes them feel altruistic, then they could be primed to respond to certain survey questions in a more altruistic manner. \\ \\
+\emph{Hypothesis: } Participants recruited altruistically will give more altruistic responses to the survey.
+
+\subsection{Note on Causality}
+For the three dimensions analyzed, causation can only be inferred for the participation rate, since the samples for effort and responses have been (intentionally) biased. However, the differences in effort and responses are still relevant as they would suggest that different recruiting methods do have a significant result on study outcomes. 
 
 \section{Methodology} 
+\subsection{Treatment Groups}
+There were two treatment groups for my study, which I termed the "Altruistic" and "Monetary" treatment groups. Individuals assigned to each treatment group received different recruitment emails. 
+\subsubsection{Altruistic}
+The altruistic treatment group received an email intended to appeal to altruism and without mention of monetary reward (links to survey excluded):
+
+\fbox{
+    \parbox{\textwidth}{
+        \smallskip
+        \textbf{Subject:} Please help me out by completing brief Psych 15 survey! \\ \\
+        Hi, \\  \\
+        I’m sure you’ve received a lot of these already, but I’m conducting a study for Psych 15 and you would be doing me a huge favor by filling out this short survey. It shouldn’t take more than 5 minutes and I would be extremely grateful to you for completing it. Thank you! You’re the best! \\ \\
+        Kevin Bi, \\
+        Sophomore, Currier House 
+        } 
+}
+\subsubsection{Monetary}
+The monetary treatment group received an email focusing on monetary reward and designed to appeal to the recipient's self-interest. A best effort was made to avoid any appeals to altruism (links to survey excluded):
+
+\fbox {
+    \parbox{\textwidth}{
+    \smallskip
+    \textbf{Subject:} Chance to win \$40 for completing brief Psych 15 survey! \\ \\
+    Hi, \\ \\ 
+    Interested in the chance for a free gift card? Fill out this very short survey for Psych 15 and you’ll be entered into a lottery to win a \$40 Amazon gift card. It shouldn’t take more than 5 minutes and you could win \$40! Good luck! \\ \\ 
+    Kevin Bi, \\
+    Sophomore, Currier House
+
+    }
+}
+
+\subsection{Sample}
+I randomly assigned all but two (Lowell and Currier) of Harvard's upperclassmen houses to one of the two treatment groups. I then used the Harvard College Facebook to obtain emails from a random sample of the individuals in each house. I excluded Currier because I live in the house and did not want my personal presence to affect results, and I excluded Lowell because the house is currently being renovated so it was difficult to determine which students were actually in Lowell house. I assigned treatment groups by house to minimize interactions between subjects of different treatment groups e.g. two people realizing they received different emails for the same survey. The treatment groups were as follows:
+
+\begin{center}
+    \begin{tabular}{c|c}
+        \textbf{Altruism} & \textbf{Monetary} \\
+        \hline
+        Adams & Cabot \\
+        Eliot & Dunster \\
+        Kirkland & Leverett \\
+        Mather & Quincy \\
+        Pforzheimer & Winthrop \\
+        \hline
+        $N = 1571$ & $N = 1482$
+    \end{tabular}
+\end{center}
+
+\subsection{Survey}
+Both treatment groups received the same survey and the survey was designed to measure each of the three dimensions of interest.
+
+\subsubsection{Participation Rate}
+The participation rate is the simplest to measure. There are two measurements that are relevant: the proportion of people that completed the survey out of those who received the email, and the proportion of people that completed the survey out of those who started the survey. 
+
+\subsubsection{Effort}
+To measure effort in the study, I compared how much participants in each treatment group were willing to write in response to short answer questions. I contacted Mike Yeomans, a post-doctoral fellow at the Harvard Business School researching conversation topics, for a list of topics that people disliked writing about. I selected two topics that I believed were appropriate: \\
+
+\displaybox{
+    \textbf{Q1.} If you knew that in one year you would die suddenly, would you change anything about the way you are now living? Why?
+}
+
+
+\displaybox{
+    \textbf{Q2.} When did you last cry in front of another person? Why?
+} 
+
+Participants were informed that they could decline to answer any of the questions. The average word count for respondents was used as a measure of effort on the survey. 
+
+\subsubsection{Altruistic Behavior} 
+To test a difference in altruistic behavior, I asked two questions:
+
+\displaybox{
+    \textbf{Q3.} What is the maximum amount of money in dollars that you would pay right now to save the life of a child in the developing world?
+}
+
+\displaybox{
+    \textbf{Q4.} For completing this survey, you will have the option to be entered into a lottery to win a \$40 Amazon gift card. However, if you so wish, you also have the option of donating your "lottery ticket." If you choose this option, then if you are selected as the lottery winner, I will instead donate \$40 to the Against Malaria Foundation. Please select which you would prefer.
+}
+
+I used the average amount people were willing to donate and the proportions of people willing to donate their chance of winning to the Against Malaria Foundation to measure altruistic behavior.  
+
+\subsection{Operational Details}
+I created the survey using Qualtrics and used Qualtrics to send out emails to my sample. I sent out emails for both treatment groups on the evening of November 13th, a follow-up email on the evening of November 18th, and ended the survey at midnight on November 22nd. 
 
 \section{Results}
+The results of the survey are listed below. Each table shows the effect that was being measured, the results for each treatment group, the difference (calculated as [Altruistic Result] $-$ [Monetary Result]), and the p-value calculated using the appropriate statistical test.
+\subsection{Participation Rate}
+\begin{center}
+    \begin{tabular}{c| c c | c c}
+         & \textbf{Altruistic} & \textbf{Monetary} & \textbf{Difference} & \textbf{P-Value}\\
+         \hline
+         Completed Survey & 127 & 119 & N/A & N/A \\
+         Started Survey & 219 & 197 & N/A & N/A \\
+         Completion rate after email  & .08 & .08  & $.00$ & 1\\
+         Completion rate after starting & .58 & .60 & $-.02$ & .26
+    \end{tabular}
+\end{center}
+I used a difference of proportions test and found no statistically significant difference for participation rate and completion rate. 
+
+\subsection{Effort}
+Only data for participants that completed the survey was taken into account. The average word counts per participant are shown below
+
+\begin{center}
+    \begin{tabular}{c| c c | c c}
+         & \parbox[t]{2cm}{\textbf{Altruistic}\\($N = 127$)} & \parbox[t]{2cm}{\textbf{Monetary}\\($N = 119$)} & \textbf{Difference} & \textbf{P-Value}\\
+         \hline
+         Q1 & 23.27 & 24.61 & -1.34 & .54 \\
+         Q1 SD & 17.09 & 17.41 & N/A & N/A \\
+         Q2 & 14.22 & 13.36 & 0.86 & .56 \\
+         Q2 SD & 12.80 & 10.16 & N/A & N/A
+    \end{tabular}
+\end{center}
+I used a difference of averages to compute statistical significance, and found that none of the results were statistically significant. 
+
+\subsection{Altruistic Behavior}
+The two variables I measured were the average amount wiling to pay to save a child's life and the proportion of people willing to donate their chance of winning. 
+
+However, because I did not put an upper limit on the amount people could list as their willingness to pay for the first question (to avoid an anchoring effect), some people listed arbitrarily high numbers to indicate their belief that a life is priceless. I normalized the data to avoid arbitrarily large and meaningless results using two methods: by converting any values above \$10,000 to \$10,000 ("capping"), or by eliminating any values above \$10,000 ("exclusion"). Listed below is the average willingness to pay using both normalization methods:
+
+\begin{center}
+    \begin{tabular}{c| c c | c c}
+         & \parbox[t]{2cm}{\textbf{Altruistic}\\($N = 127$)} & \parbox[t]{2cm}{\textbf{Monetary}\\($N = 119$)} & \textbf{Difference} & \textbf{P-Value}\\
+         \hline
+         Capping & 2520.84 & 2235.65 & 285.19 & .54\\
+         Capping SD & 3770.32 & 3527.71 & N/A & N/A\\
+         Exclusion & 1364.97 & 1364.88 & 0.09 & .99\\
+         Exclusion SD & 2521.87 & 2490.97 & N/A & N/A
+    \end{tabular}
+\end{center}
+In neither statistical method is there a significant result after a difference of averages test. 
+
+Both treatment groups were also presented with the choice to either receive a chance to win a \$40 Amazon gift card or for a chance to donate \$40 to the Against Malaria Foundation. The proportions for each are listed below
+
+\begin{center}
+    \begin{tabular}{c| c c | c c}
+         & \parbox[t]{2cm}{\textbf{Altruistic}\\($N = 127$)} & \parbox[t]{2cm}{\textbf{Monetary}\\($N = 119$)} & \textbf{Difference} & \textbf{P-Value}\\
+         \hline
+         Donating Proportion & .78 & .56 & 0.22 &  $.0003^{*}$
+    \end{tabular}
+\end{center}
+This result was highly statistically significant after a difference of proportions test, with a p-value of 0.0003. 
 
 \section{Discussion}
+\subsection{Interpretation of Results}
+\subsubsection{Participation Rate}
+There was no significant difference in the participation or completion rates between the two treatment groups. This could be an indication that the motivated reasoning effect is as strong as a small chance of winning \$40. However, I believe that the monetary incentive was more likely too small to draw a meaningful difference. It is also likely that people were motivated by a form of reciprocal altruism \citep{trivers}. In fact, one other PSY 15 student responded after completing my survey asking that I complete their survey in return. Nonetheless, these results are significant because they indicate that using small amounts of money is no more effective at recruiting participants than simply appealing to people's "good nature."
+
+\subsubsection{Effort}
+The monetary group wrote slightly more words on average for the first question and the altruistic group wrote slightly more for the second question, but neither result was statistically significant. This result is unexpected because from an economically rational perspective, those in the monetary group should have tried to finish the survey as fast as possible to maximize financial return per unit time. However, this seems to have been mitigated by some feeling of obligation to put effort into the study. This could be a result of Robert Cialdini's principle of Reciprocity: because the participants in the monetary group knew they would have the chance to receive money, they felt some obligation to put effort into their results to in some sense "earn" that money. This nonetheless indicates that there is little evidence of an effort justification feedback loop, since members of the altruistic group did not write significantly more. 
+
+\subsubsection{Altruistic Behavior}
+While there was no statistically significant in claimed willingness to behave altruistically, there was a significant difference in the observed willingness to behave altruistically. While both groups were in theory willing to pay the same amount to save a child's life, the altruistic group was much more willing to actually donate money to save a child's life. 
+
+Part of this is effect is likely due to priming an altruistic individual to feel altruistic in the recruitment email, making them more willing to actually behave altruistically in the survey. While this could be a form of loss aversion, i.e. the participants in the monetary group saw donating as losing money, I find this unlikely because none of the participants actually had guaranteed money, only the chance to win it. There is little reason to believe that participants would be averse to losing something they never actually had. The final alternative explanation is that the altruistic treatment recruited more innately altruistic people, but given the homogeneity of the other responses, I find it unlikely that the altruistic treatment group attracted significantly more altruistic people. 
+
+I consider the difference in altruistic behavior to be of high importance, since it means that the method of recruitment itself can bias studies examining altruistic behavior, such as prisoner's dilemma or public goods studies. 
+
+\subsection{Limitations}
+\subsubsection{Monetary}
+I believe one of the main limitations was monetary. A small chance to win some money may not have been properly internalized. If it was a guaranteed amount of money for completing the survey, or if the amount of money could have varied, then more significant differences in participation rate or effort may have been found. 
+
+\subsubsection{Sampling}
+The sample was restricted to Harvard undergraduate upperclassmen with emails listed on the College Facebook, and my personal connection with some of the students may have encouraged them to participate, possibly making the differences in recruitment style alone appear less significant. 
+
+\subsubsection{Survey Design}
+Part of the problem with giving the surveys as optional and over email meant that the survey itself could not take too much time because many participants may have quit the survey otherwise. If there were some way to commit participants to completing the study, such as conducting the survey in a laboratory environment, that may have been more effective at eliciting differences in effort. 
+
+\subsection{Further Exploration}
+The main exploration I would like to undertake would be offering different amounts of money to gauge whether the variance in altruistic behavior is discrete (offered money or not) or continuous (amount of money offered). It would also be interested to apply sub-treatments within each group, because while this shows that observational studies can be biased, I would like to explore whether experiments can be biased due to recruitment method as well. Finally, conducting these studies in laboratory setting or conducting the surveys in person could have proven more effective at eliciting differences in both participation rate and effort by making the study more difficult to ignore and/or quit.
 
 \medskip
 \bibliography{references}
